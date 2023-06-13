@@ -1,0 +1,32 @@
+{
+  "name": "plasmify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend/"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "turbo": "^1.10.1",
+    "vite": "^4.3.9"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,md,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "*": [
+      "prettier --write --ignore-unknown"
+    ]
+  }
+}
