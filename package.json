@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "frontend/"
+    "frontend/",
+    "app/",
+    "backend/"
   ],
   "scripts": {
     "build": "turbo run build",
