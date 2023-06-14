@@ -6,7 +6,6 @@
   "private": true,
   "workspaces": [
     "frontend/",
-    "app/",
     "backend/"
   ],
   "scripts": {
@@ -20,7 +19,6 @@
     "@nestjs/cli": "^9.5.0",
     "eslint": "^8.42.0",
     "husky": "^8.0.3",
-    "octokit": "^2.0.19",
     "prettier": "^2.8.8",
     "turbo": "^1.10.1",
     "vite": "^4.3.9"
