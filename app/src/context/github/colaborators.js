@@ -1,9 +1,4 @@
-const { getEnvVariables } = require('../../environment/envVariables')
-const { Octokit } = require('octokit')
-
-const octokit = new Octokit({
-  auth: getEnvVariables().GITHUB_AUTH_TOKEN
-})
+const { octokit } = require('../index')
 
 const getOrgColaborators = async (_org) => {
   const colaborators = await octokit.request(
